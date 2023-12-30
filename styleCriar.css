@@ -1,0 +1,104 @@
+/*--------------------------------------------------------CONTAINERS*/
+#containerCriar {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: "nav"
+        "main"
+        "footer";
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    user-select: none;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*--------------------------------------------------DEFININDO ÁREAS*/
+nav {
+    grid-area: nav;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    background-color: #C6C6BF;
+    grid-area: footer;
+}
+
+/*-----------------------------------------------------QUESTIONÁRIO*/
+h3 {
+    text-align: center;
+}
+
+.enunciado {
+    background-color: #2B2B2B;
+    color: #fff;
+    text-align: center;
+    margin: 0 10%;
+    padding: 4%;
+}
+
+.resposta,
+.botoes {
+    background-color: #414141;
+    color: #fff;
+    text-align: center;
+    margin: 0 10%;
+    padding: 1% 5%;
+}
+
+input[type=text],
+.selectResposta,
+input[type=number],
+.resultados {
+    border-radius: 4px;
+    box-shadow: 1px 1px 2px #C6C6BF;
+    background: #cccccc;
+    border: 1px solid #000000;
+    padding: 1%;
+    font-weight: bold;
+    margin-bottom: 1%;
+    margin-right: 2%;
+    margin-left: 1%;
+    text-transform: capitalize;
+}
+
+input[type="text"]:focus,
+.selectResposta:focus,
+input[type=number]:focus {
+    border-color: #684eeb;
+    outline: none;
+}
+
+.botoes {
+    text-align: center;
+}
+
+label {
+    text-transform: capitalize;
+}
+
+.resultados {
+    text-align: center;
+}
+
+/*-----------------------------------------------------FINAL*/
+table,
+td,
+th {
+    background-color: #414141;
+    border-style: solid;
+    border-color: #cccccc;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}

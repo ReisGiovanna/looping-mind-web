@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoopingMind</title>
+    <link href="img/logo.png" rel="icon">
+    <!-- Links -->
+    <link rel="stylesheet" href="styleCriar.css">
+    <link rel="stylesheet" href="stylePhoneTablet.css">
+    <link rel="stylesheet" href="styleMain.css">
+</head>
+
+<body id="containerCriar">
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div id="menuToggle">
+            <ul id="menu">
+                <a href="index.html"><img src="img/logo.png" alt="Logo LoopingMind" class="logoNav"></a>
+                <li><a href="index.html">Voltar</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Primeira Pergunta -->
+        <h3>É ótimo que você experimente novos métodos de estudo! <br>Responda as perguntas abaixo e receba seu Ciclo
+            ao
+            final de forma <strong>gratuita</strong>!</h3><br><br>
+            <h3>NÃO SE ESQUEÇA DE CLICAR EM <strong>FEITO</strong> AO CONCLUIR CADA PASSO!</h3>
+        <div class="enunciado">
+            <p><strong>1°)</strong> Quais assuntos você precisa estudar?</p>
+        </div>
+        <div class="resposta" id="items-container">
+            <div class="item-container">
+                <label for="item1">Assunto 1:</label>
+                <input type="text" id="item1" name="item[]" />
+            </div>
+        </div>
+        <div class="botoes">
+            <button class="btnIntro" onclick="adicionarItem()">Adicionar</button>
+            <button class="btnIntro" onclick="removerUltimoItem()">Remover</button>
+            <button class="btnIntro" onclick="mostrarProximaPergunta()">Feito</button>
+            <br><br><br>
+        </div><br><br>
+
+        <!-- Segunda Pergunta -->
+        <section id="segunda">
+            <div class="enunciado">
+                <p><strong>2°)</strong> Como você se avalia nestes assuntos?<br><br>Considere: <br>1 - Ótimo; 2- Bom; 3
+                    -
+                    Mais ou menos; 4 - Ruim; 5 - Péssimo</p>
+            </div>
+            <div class="resposta" id="avaliacao-container">
+                <!-- Conteúdo Dinâmico Será Adicionado Aqui -->
+            </div>
+            <div class="botoes">
+                <button class="btnIntro" onclick="obterValoresSelects()">Feito</button>
+                <br><br><br>
+            </div>
+        </section><br><br>
+
+        <!-- Terceira Pergunta -->
+        <section id="terceira">
+            <div class="enunciado">
+                <p><strong>3°)</strong> Quantas horas diárias você pretende dedicar aos estudos?</p>
+            </div>
+            <div class="resposta" id="horas-dedicadas">
+                <input type="number" id="horasDedicadas" name="horas" max="23" />
+            </div>
+            <div class="botoes">
+                <button class="btnIntro" onclick="capturarHoras()">Feito</button>
+                <br><br><br>
+            </div>
+        </section><br>
+
+        <!-- Quarta Pergunta -->
+        <section id="quarta">
+            <div class="enunciado">
+                <p><strong>4°)</strong> Quantos dias por semana você irá estudar?</p>
+            </div>
+            <div class="resposta" id="dias-dedicados">
+                <input type="number" id="diasDedicados" name="dias" max="7"/>
+            </div>
+            <div class="botoes">
+                <button class="btnIntro" onclick="capturarDias();"><a href="#resultado">Concluir</a></button>
+                <br><br><br>
+            </div>
+        </section><br>
+
+        <section id="resultado">
+            <h1 style="text-align: center;"><strong>Obrigado pelo seu tempo!</strong></h1>
+            <h3>Aqui estão seus resultados:</h3>
+
+            <div class="resultados" id="resultadosDiv">
+                <button onclick="exibirResultado()" class="btnIntro">Verificar</button>
+            </div><br>
+
+            <div class="botoes" style="background-color: inherit;">
+                <button class="btnIntro"><a href="final.html">Finalizar</a></button>
+                <button class="btnIntro"><a href="criarCiclo.html">Limpar tudo</a></button>
+            </div><br>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="contatos">
+            <a href="https://www.instagram.com/gikaah_ap"><img src="/img/instagram.png" alt="Instagram da criadora"
+                    width="50rem"></a>
+            <a href="https://github.com/ReisGiovanna"><img src="/img/github.png" alt="GitHub da criadora"
+                    width="50rem"></a>
+            <a href="mailto:giovannareisdev@gmail.com"><img src="/img/o-email.png" alt="E-mail da criadora"
+                    width="50rem"></a><br><br>
+            <h4>Criadora: Giovanna A. R. Reis</h4>
+        </div>
+        <div class="creditos">
+            <p>Todos os direitos reservados. <br>Site feito por pura diversão e curiosidade :)</p>
+            <p>MMXXIV</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+/*-----------------------------------------------------------------MAIN*/
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    /* Estilos para Tablet */
+    .imgFundoIntro {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .blocoResumo,
+    .vantagens,
+    .chamada,
+    .creditos {
+        margin: 0 10%;
+    }
+
+    .blocoResumo {
+        box-shadow: #000 .3rem .3rem .3rem;
+        border-radius: 3%;
+    }
+
+    .chamada{
+        padding-bottom: 8%;
+    }
+
+    nav.fixed {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    /* Estilos para Smartphone */
+    .asideIntroducao {
+        flex-direction: column;
+    }
+
+    .imgFundoIntro,
+    .txtBlocoIntro {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .blocoResumo,
+    .vantagens,
+    .chamada,
+    .creditos {
+        margin: auto;
+    }
+
+    .contatos,
+    .creditos {
+        float: none;
+    }
+
+    .blocoResumo {
+        box-shadow: #000 .3rem .3rem .3rem;
+        border-radius: 3%;
+        text-indent: 1rem;
+        font-size: 15px;
+    }
+
+    .chamada{
+        padding-bottom: 8%;
+    }
+
+    nav.fixed {
+        display: block;
+    }
+
+    .logoNav{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+    }
+    
+    nav ul li a {
+        padding: 10px;
+        float: none;
+    }
+
+    .asideIntroducao {
+        flex-direction: column;
+    }
+
+    .imgFundoIntro,
+    .txtBlocoIntro {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+/*----------------------------------------------------------------TESTE*/
